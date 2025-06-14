@@ -1,0 +1,83 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ body {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+     color: #fff;
+ }
+
+ .watch {
+     background: rgba(255, 255, 255, 0.05);
+     border-radius: 50%;
+     width: 300px;
+     height: 300px;
+     position: relative;
+     box-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     backdrop-filter: blur(15px);
+     border: 4px solid rgba(255, 255, 255, 0.2);
+ }
+
+ .dial {
+     font-size: 1.8rem;
+     letter-spacing: 1px;
+ }
+
+ .controls {
+     position: absolute;
+     bottom: 15px;
+     display: flex;
+     gap: 8px;
+ }
+
+ .btn {
+     padding: 6px 12px;
+     border-radius: 20px;
+     border: 1px solid rgba(255, 255, 255, 0.4);
+     background: rgba(255, 255, 255, 0.1);
+     color: #fff;
+     cursor: pointer;
+     font-size: 0.8rem;
+     transition: 0.3s;
+ }
+
+ .btn:hover {
+     background: rgba(255, 255, 255, 0.3);
+     color: #000;
+ }
+
+ .laps {
+     position: absolute;
+     top: 15px;
+     max-height: 80px;
+     overflow-y: auto;
+     font-size: 0.75rem;
+     width: 80%;
+     text-align: center;
+ }
+
+ .laps div {
+     margin: 2px 0;
+     opacity: 0.7;
+ }
+
+ .circle-outline {
+     position: absolute;
+     border: 2px dashed rgba(255, 255, 255, 0.2);
+     border-radius: 50%;
+     width: 90%;
+     height: 90%;
+     top: 5%;
+     left: 5%;
+ }
